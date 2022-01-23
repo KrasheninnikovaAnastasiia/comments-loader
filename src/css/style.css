@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.container {
+    margin: 20px;
+    width: 80vw;
+}
+
+h1 {
+    margin-top: 50px;
+    text-align: left;
+}
+
+.form-container {
+    position: relative;
+}
+
+.form-control input,
+.form-control textarea {
+    font-family: inherit;
+    background-color: #F4F4F4;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.form-control input:focus,
+.form-control textarea:focus {
+    outline: none;
+}
+
+.form-control textarea {
+    height: 20vh;
+    margin-bottom: 58px;
+}
+
+.btn {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 50px;
+    font-size: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .1s ease;
+}
+
+.post-btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.show-btn {
+    display: block;
+    margin: 20px auto;
+}
+
+.post-btn:active,
+.show-btn:active {
+    transform: scale(.98);
+}
+
+.post-btn:hover,
+.show-btn:hover {
+    opacity: 0.9;
+}
+
+.dash {
+    background-color: #999;
+    width: 100%;
+    height: 2px;
+}
+
+.comment-body {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.comment-body:not(:last-of-type) {
+    border-bottom: 1px solid #999;
+}
+
+.comment-body img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+}
+
+.user-info {
+    display: block;
+    padding: 0 20px 20px;
+    width: 100%;
+}
+
+.user-info__header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info .user-info__header h4 {
+   font-size: 1em;
+   color: #000;
+   padding: 0;
+}
+
+.days-ago {
+    position: absolute;
+    right: 0;
+    letter-spacing: 1px;
+    color: #888;
+}
+
+.user-info p {
+    text-align: justify;
+    padding: 0;
+    font-size: 1em;
+    color: #000;
+}
+
+.pagination ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.pagination li {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    font-size: 1em;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+  
+.pagination li.active {
+    background-color: #444;
+    color: white;
+}
+  
+.pagination li:hover:not(.active) {
+    background-color: #ddd;
+} 
+
+.hide {
+    display: none;
+}
