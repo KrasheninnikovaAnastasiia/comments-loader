@@ -6,6 +6,7 @@
 * "Show More" button
 * Pagination
 * Total comments counter
+* Comments' age counter
 
 ## Demo
 ![Demo](demo/project_demo.gif)
